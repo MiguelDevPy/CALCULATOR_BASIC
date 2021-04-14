@@ -1,8 +1,10 @@
 button{
     padding: 3%;
     background-color: aquamarine;
-    border-radius: 8px;
+    border: 0.5px gray solid;
+    border-radius: 5px;
     font-size: 1rem;
+    font-weight: 400;
     font-family: sans-serif;
 }
 input {
@@ -10,7 +12,7 @@ input {
     padding: 5%;
     background-color: rgb(255, 232, 127);
     height: 10%;
-    width: 40%;
+    width: 60%;
     border-radius: 8px;
 }
 .content-calculator{
@@ -23,4 +25,11 @@ input {
 
 button:hover{
     background-color: aliceblue;
+}
+
+.numbers{
+    background-color: green;
+}
+.deleted{
+    background-color: red;
 }
