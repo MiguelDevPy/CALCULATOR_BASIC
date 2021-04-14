@@ -1,0 +1,62 @@
+Este es un documento que explica que fue lo que hice en este pequeño programa
+
+#CALCULATOR_BASIC By Miguel Romero
+
+
+PRIMEROS PASOS:
+    Agregué un documento HTML nuevo, lo fundamental, vinculé los estilos y los scripts
+como era mi primera vez programando algo lo mas optimizado posible, vi algunos videos que
+en lo personal no me sirvieron totalmente, sino que en cada video tomaba una idea distinta
+esos conceptos los queria unir, decidi hacerlo a mi manera tomando en cuenta lo que veia
+
+CAPTURA DE ELEMENTOS:
+    Comencé a capturar los botones con un ¨name¨ y al input con un ¨id¨, con un
+forEach() hice que los botones tengan un evento y que modifiquen el input con funciones
+de flecha (Arrow functions).
+
+VARIABLES Y CONSTANTES:
+    Decidi darle asignarle una variable al estado del input para que este se modificase con
+con las funciones de cada boton, realice un objeto para los errores que pueda tener el programa,
+tanto para los matematicos, los de sintaxis y los mios (en la ejecucion de funciones), con las
+variables tambien intenté no utilizar datos sueltos para las funciones.
+
+FUNCIONES:
+    Aqui tratare de explicar lo mejor posible
+    1. Agregar elementos al display:
+        Esta funcion primero verifica con una condicional dentro de otra si es que
+        se tiene un punto decimal para no agregar mas puntos de lo que ya tiene, porque eso
+        no funcionaria, si bien se puede validar en la operacion, decidi ponerlo a esta funcion
+        para que me resulte mas facil identificarlo. Una vez que se verifique que no tenga puntos demas
+        se actualiza el valor de la variable asignada al display. Una cosa importante es que los numeros
+        son Strings para concatenarse entre si para dar un cierto numero, al calcularse recien se transforman
+        a numeros como tal.
+
+    2. Eliminar de a uno:
+        Esta funcion tsmbien tiene validaciones,si es que el valor a eliminar esta vacio o es un 
+        o es un resultado en pantalla no se debera eliminar el numero que este en la pantalla, una
+        cosa curiosa es que bastaba con validar si estaba vacio, total el resultado no se podia eliminar
+        de a uno, al hacerlo me mandaba un error en consola, sabiendo que ¨.slice()¨ no puede eliminar un
+        valor numerico. Una vez que se valida eso, ya puede actualizar la pantalla borrando de a uno.
+    
+    3. Eliminar todo:
+        Para que elimine por completo simplemente se asignó el valor anterior y el actual a su estado inicial
+        igualando el valor actual al display, porque aunque sea redundante, estaba variable es la que define
+        el contenido del input(display).
+
+    4. Determinar el primer termino y agregar el segundo:
+        Lo que hice aqui fue que primero se muestre en pantalla que operacion se esta
+        presionando, despues el tipo de operacion se guarde en una variable, luego que los
+        numeros concatenados(porque son Strings) se guarden en una variable, para luego volver a
+        darle el valor inicial al input, y asi concatenando esta vez el segundo termino que se va a
+        operar.
+    
+    5. Hacer los calculos:
+        Para esto se iguala el valor anterior y el valor actual a numeros, y el tipo de operacion
+        se realiza en un switch, el resultado se muestra en el input((display).
+
+En fin esto fue un repaso de lo que hice, espero que te haya gustado, es la primera vez
+que pongo en practica todo esto, si quieres mejorar el codigo puedes descargartelo, pronto 
+vere para hacer mas grande este proyecto agragando funciones mas avanzadas, esta es la primera version
+utilizando Git y GitHub.
+
+ 
