@@ -13,7 +13,10 @@ const display = document.getElementById('result')
 
 const NOT_VALUE = ''
 let currentValue = NOT_VALUE;
-const MESSAGE_ERROR = { syntaxError : 'ERROR! Falta una expesion', mathError: 'ERROR! La division por cero no existe'}
+const MESSAGE_ERROR = {
+        syntaxError : 'ERROR! Falta una expesion', 
+        mathError: 'ERROR! La division por cero no existe'
+}
 
 // EVENTOS DE CADA BOTON ========================================================================================================================
 
@@ -80,7 +83,7 @@ dvision, potenciacion ect */
             case '/':
                 if(secondNumber === 0){
                     getResult = MESSAGE_ERROR.mathError
-                    return
+                    display.value = NOT_VALUE;
                 } else{
                     getResult = firstNumber / secondNumber
                 }
