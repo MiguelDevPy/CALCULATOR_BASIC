@@ -9,28 +9,37 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <div class="content-all">
+    <div class="content-display">
+        <b>
+        <input type="text" id="result" placeholder="0">
+        </b>
+    </div>
     <div class="content-calculator">
-        <input type="text" id="result" placeholder="0"> <br>
         <button class="numbers" name="data-number">9</button>
         <button class="numbers" name="data-number">8</button>
         <button class="numbers" name="data-number">7</button>
-        <button class="deleted" name="data-deleteOneByOne">DEL</button>
-        <button class="deleted" name="data-delete">C</button> <br>
-
+        <button  class="operations" name="data-operation">+</button>
+        <button  class="operations" name="data-operation">-</button>
+        
         <button class="numbers" name="data-number">6</button>
         <button class="numbers" name="data-number">5</button>
         <button class="numbers" name="data-number">4</button> 
-        <button name="data-operation">+</button>
-        <button name="data-operation">-</button><br>
+        <button  class="operations" name="data-operation">/</button>
+        <button  class="operations" name="data-operation">*</button> 
+
         <button class="numbers" name="data-number">3</button>
         <button class="numbers" name="data-number">2</button>
         <button class="numbers" name="data-number">1</button>
-        <button name="data-operation">/</button>
-        <button name="data-operation">*</button>  <br>
+        <button  class="operations" name="data-operation">√</button> 
+        <button  class="operations" name="data-operation">^</button>
         <button class="numbers" name="data-number">0</button>
-
-        <button name="data-number">.</button>
-        <button name="data-igual">=</button>
+        
+        <button  class="operations" name="data-number">.</button>
+        <button  class="operations" name="data-igual">=</button>
+        <button class="deleted" name="data-deleteOneByOne">DEL</button>
+        <button class="deleted" name="data-delete">C</button>
+    </div>
     </div>
     <script src="js/main.js"></script>
 </body>

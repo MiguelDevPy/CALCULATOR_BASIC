@@ -61,6 +61,13 @@ const saveValues = (operator) =>{
 const solveOperation = ()=>{
     /* Agrega las otras operaciones como suma resta multiplicacion
 dvision, potenciacion ect */
+    if(typeOperation === '√'){
+        n = parseFloat(previousValue)
+        getResult = Math.sqrt(n)
+        display.value = getResult
+        currentValue = getResult
+        return
+    }
         firstNumber =  parseFloat(previousValue)
         secondNumber = parseFloat(currentValue)
         if(isNaN(firstNumber) || isNaN(secondNumber)){
@@ -87,8 +94,13 @@ dvision, potenciacion ect */
                 } else{
                     getResult = firstNumber / secondNumber
                 }
-                
                 break;
+            case '^':
+                getResult = Math.pow(firstNumber, secondNumber)
+                break;
+            // case '√':
+            //     getResult = Math.sqrt(secondNumber)
+            //     break;
             default:
                 getResult = "Sintax ERROR"
                 break;
@@ -105,3 +117,20 @@ const clearScreen = () =>{
     currentValue = NOT_VALUE;
     display.value = NOT_VALUE;
 }
+
+
+// OPERACIONES CON UN SOLO ARGUMENTO ==========================================================
+
+// const unArgumento = (operador)=> {
+//     if(operador == '^'){ 
+//     getResult = Math.sqrt(currentValue)
+//     display.value = getResult;
+//     currentValue = getResult;
+//     }
+
+// }
+
+
+// FUNCIONES TRIGONOMETRICAS ==========================================================
+
+// const funcionesTrignometricas 
