@@ -6,14 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora Basica</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div class="content-all">
+    <div class="content-select">
+        <select name="data-type-calculator" id="select-calculator">
+            <option value="select">Seleccionar tipo de calculadora</option>
+            <option id="type-estandar" value="estandar">Estandar</option>
+            <option class="type-cientifico" value="cientifica">Cientifica</option>
+        </select>
+    </div>
+    <div class="content-all" hidden="hidden">
     <div class="content-display">
-        <b>
-        <input type="text" id="result" placeholder="0">
-        </b>
+        <input type="text" readonly="readonly" id="result" placeholder="0">
     </div>
     <div class="content-calculator">
         <button class="numbers" name="data-number">9</button>

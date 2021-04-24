@@ -1,53 +1,89 @@
 button{
     padding: 20px;
     color: honeydew;
-    background-color: aquamarine;
+    background-color: rgb(0, 168, 112);
     border: 0.5px gray solid;
-    font-size: 1rem;
+    font-size: 1em;
     font-weight: 400;
+    margin: 5px;
+    border-radius: 10px;
     font-family: sans-serif;
 }
 input {
     margin: 1%;
-    font-size: 2rem;
-    font-style: bold;
-    background-color: rgb(255, 232, 127);
-    height: 50px;
+    font-size: 1.1rem;
+    border: none;
+    padding-left: 10px;
+    background-color: rgb(131, 255, 127);
+    height: 90px;
     width: 97%;
+    font-weight: 400;
+    font-family: 'Righteous', cursive;
     border-radius: 8px;
+}
+select {
+    width: 100%;
+    font-family: 'Righteous', cursive;
+    color:white;
+    background-color: black;
+    padding: 1rem;
+}
+.content-select {
+    width: 30%;
+    margin: 50px auto 0;
+    background-color: blue;
 }
 
 .content-all {
     width: 30%;
-    background-color: aqua;
+    background-color: rgb(0, 170, 170);
     height: auto;
+    margin: 0px auto;
 }
 .content-display{
     display: grid;
     grid-template-columns: 98%;
-    background-color: rgb(128, 0, 111);
+    background-color: rgb(0, 0, 0);
     width: 100%;
 }
 .content-calculator{
     display: grid;
     grid-template-columns: 19% 19% 19% 19% 19%;
-    width: 100%;
+    width: auto;
     height: auto;
     margin: 3px;
-    background-color: black;
+    background-color: rgb(97, 97, 97);
+    padding: o;
 }
 
-button:hover{
-    background-color: aliceblue;
-    color: black;
-}
 
 .numbers{
-    background-color: green;
+    background-color: rgb(0, 0, 0);
+    color:white
 }
 .deleted{
     background-color: red;
+    font-size: 15px;
+    padding: auto;
 }
 .operations{
+    color: black;
+}
+
+.input-error{
+    background-color: rgb(255, 177, 177);
+    color: red;
+    border: 1.5px solid red;
+}
+
+.vacio{
+    background-color: red;
+    width: 50%;
+}
+
+
+
+button:hover{
+    background-color: aliceblue;
     color: black;
 }
