@@ -59,4 +59,13 @@ que pongo en practica todo esto, si quieres mejorar el codigo puedes descargarte
 vere para hacer mas grande este proyecto agragando funciones mas avanzadas, esta es la primera version
 utilizando Git y GitHub.
 
+
+24/4/2021
+    Agregado de nuevas funciones
+        Esta vez agregue la raiz cuadrada y la potenciacion, ademas guarde los operadores en un objeto
+
+    Tipos de errores
+        Agregue un tipo de error mas, si es que solo se tenia un operador, y no tenia argumentos marcaba un error
+        ademas le agregue estilos al input de error
+    
  
